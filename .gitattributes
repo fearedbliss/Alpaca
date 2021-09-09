@@ -1,0 +1,3 @@
+*.txt eol=crlf
+*.ini eol=crlf
+*.md eol=crlf

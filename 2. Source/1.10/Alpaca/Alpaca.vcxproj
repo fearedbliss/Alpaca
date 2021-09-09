@@ -1,0 +1,186 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{EB63DF4E-A019-4522-A140-9E8C7350B331}</ProjectGuid>
+    <RootNamespace>Alpaca</RootNamespace>
+    <Keyword>Win32Proj</Keyword>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+    <ProjectName>Alpaca</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <PlatformToolset>v142</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <PlatformToolset>v142</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>14.0.25431.1</_ProjectFileVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>$(SolutionDir)$(Configuration)\</OutDir>
+    <IntDir>$(Configuration)\</IntDir>
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>$(SolutionDir)$(Configuration)\</OutDir>
+    <IntDir>$(Configuration)\</IntDir>
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;_CRT_NON_CONFORMING_SWPRINTFS;_CRT_SECURE_NO_WARNINGS;_USRDLL;PLUGY_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>true</MinimalRebuild>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <PrecompiledHeader />
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+      <PreprocessToFile>false</PreprocessToFile>
+      <BufferSecurityCheck>false</BufferSecurityCheck>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <TargetMachine>MachineX86</TargetMachine>
+      <AdditionalDependencies>version.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <ImageHasSafeExceptionHandlers>false</ImageHasSafeExceptionHandlers>
+    </Link>
+    <PostBuildEvent>
+      <Command>copy "$(TargetPath)" "..\..\Alpaca.dll"</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;_CRT_NON_CONFORMING_SWPRINTFS;_CRT_SECURE_NO_WARNINGS;_USRDLL;PLUGY_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <PrecompiledHeader />
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <PreprocessToFile>false</PreprocessToFile>
+      <BufferSecurityCheck>false</BufferSecurityCheck>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <OptimizeReferences>true</OptimizeReferences>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <TargetMachine>MachineX86</TargetMachine>
+      <AdditionalDependencies>version.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+    <PostBuildEvent>
+      <Command>copy "$(TargetPath)" "..\..\..\1. Files\1.10\Alpaca.dll"</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="BigStash.cpp" />
+    <ClCompile Include="Commands.cpp" />
+    <ClCompile Include="Common.cpp" />
+    <ClCompile Include="D2Client.cpp" />
+    <ClCompile Include="D2Common.cpp" />
+    <ClCompile Include="D2Functions.cpp" />
+    <ClCompile Include="D2Game.cpp" />
+    <ClCompile Include="D2gfx.cpp" />
+    <ClCompile Include="D2Launch.cpp" />
+    <ClCompile Include="D2Net.cpp" />
+    <ClCompile Include="D2Win.cpp" />
+    <ClCompile Include="LibraryLoader.cpp" />
+    <ClCompile Include="Main.cpp" />
+    <ClCompile Include="Error.cpp" />
+    <ClCompile Include="ExtendedSaveFile.cpp" />
+    <ClCompile Include="Fog.cpp" />
+    <ClCompile Include="Game.cpp" />
+    <ClCompile Include="InfinityStash.cpp" />
+    <ClCompile Include="IniFile.cpp" />
+    <ClCompile Include="InterfaceStash.cpp" />
+    <ClCompile Include="LoadPlayerData.cpp" />
+    <ClCompile Include="MainScreen.cpp" />
+    <ClCompile Include="Memory.cpp" />
+    <ClCompile Include="Parameters.cpp" />
+    <ClCompile Include="PlayerCustomData.cpp" />
+    <ClCompile Include="AlpacaFiles.cpp" />
+    <ClCompile Include="SavePlayerData.cpp" />
+    <ClCompile Include="Storm.cpp" />
+    <ClCompile Include="UpdateClient.cpp" />
+    <ClCompile Include="UpdateServer.cpp" />
+    <ClCompile Include="Utility.cpp" />
+    <ClCompile Include="VersionUtility.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="BigStash.h" />
+    <ClInclude Include="Commands.h" />
+    <ClInclude Include="Common.h" />
+    <ClInclude Include="CustomData.h" />
+    <ClInclude Include="D2BinFile.h" />
+    <ClInclude Include="D2Client.h" />
+    <ClInclude Include="D2Common.h" />
+    <ClInclude Include="D2Constants.h" />
+    <ClInclude Include="D2Functions.h" />
+    <ClInclude Include="D2Game.h" />
+    <ClInclude Include="D2gfx.h" />
+    <ClInclude Include="D2Launch.h" />
+    <ClInclude Include="D2Net.h" />
+    <ClInclude Include="D2StringTblStruct.h" />
+    <ClInclude Include="D2Struct.h" />
+    <ClInclude Include="D2UnitStruct.h" />
+    <ClInclude Include="D2Win.h" />
+    <ClInclude Include="Error.h" />
+    <ClInclude Include="ExtendedSaveFile.h" />
+    <ClInclude Include="Fog.h" />
+    <ClInclude Include="Game.h" />
+    <ClInclude Include="InfinityStash.h" />
+    <ClInclude Include="IniFile.h" />
+    <ClInclude Include="InterfaceStash.h" />
+    <ClInclude Include="Library.h" />
+    <ClInclude Include="LibraryLoader.h" />
+    <ClInclude Include="LoadPlayerData.h" />
+    <ClInclude Include="MainScreen.h" />
+    <ClInclude Include="Memory.h" />
+    <ClInclude Include="Parameters.h" />
+    <ClInclude Include="PlayerCustomData.h" />
+    <ClInclude Include="AlpacaFiles.h" />
+    <ClInclude Include="Resource.h" />
+    <ClInclude Include="SavePlayerData.h" />
+    <ClInclude Include="Storm.h" />
+    <ClInclude Include="UpdateClient.h" />
+    <ClInclude Include="UpdateServer.h" />
+    <ClInclude Include="UpdatingConst.h" />
+    <ClInclude Include="Utility.h" />
+    <ClInclude Include="VersionUtility.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="Alpaca.rc" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
