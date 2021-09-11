@@ -54,7 +54,7 @@ Released under the [GNU General Public License v3](LICENSE.md) or Later.
 - **`/swap <page #>`** : Swaps the content of the current page with the content of the target page.
 - **`/page <page #>`** : Takes you to the corresponding page.
 
-## Installation Instructions
+## Installation Instructions ([Video](https://odysee.com/@TheCactusSanctuary:f/-Diablo-II--Alpaca---A-Simple-Stash-Extension-for-Diablo-II-1.09b---1.10f:5))
 
 ### Installation (Standalone)
 
