@@ -18,7 +18,7 @@ As always, when using any type of mod (or just something good to do in general),
 ## Compatibility
 
 - [Cactus](https://github.com/fearedbliss/Cactus) -
-  A Modern Diablo II Version Switcher (Contains: Singling/Alpaca)
+  A Modern Diablo II Version Switcher (Contains: Singling)
 - [Singling](https://github.com/fearedbliss/Cactus/blob/master/README-SINGLING.md) -
   A collection of non-gameplay modifications and fixes in
   order to improve the Vanilla Diablo II Single Player Experience.
