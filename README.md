@@ -15,6 +15,10 @@ best experience, you should combine Alpaca with [Singling](https://github.com/fe
 
 As always, when using any type of mod (or just something good to do in general), make sure to always keep backups!
 
+## Status
+
+This project is in maintenance mode and provided as is. I'll only be accepting bug fixes from the community. Furthermore, I recommend not using Alpaca and instead just using [Cactus' Character Isolation](https://odysee.com/@TheCactusSanctuary:f/-Diablo-II--How-to-play-any-version-of-Diablo-II-with-Cactus-%282.4.1%2B%2C-Short-Version%29:a?t=1188) feature in combination with Singling, to provide multiple instances and transfer items via LAN. This allows you to still transfer items in game, reduces the number of dependencies you need to play, and significantly increases the stability of the game since you don't have all of this extra code running.
+
 ## Compatibility
 
 - [Cactus](https://github.com/fearedbliss/Cactus) -
