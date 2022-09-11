@@ -3,7 +3,7 @@
 
 ## Description
 
-Alpaca is a Simple Stash Extension for **`Diablo II: 1.09b & 1.10f`**
+Alpaca is a Simple Stash Extension for **`Diablo II: 1.09b & 1.10`**
 that was based off Yohann Nicolas' **[PlugY](http://plugy.free.fr/en/index.html) 11.02**.
 It has been massively refactored, stabilized, has full support for
 **`Diablo II Classic`**, and is fully compatible with Necrolis' Native OpenGL Diablo II Driver:
@@ -13,11 +13,17 @@ that were related to **`Multiplayer / LAN`** have also been fixed.
 Alpaca's primary focus is to provide more storage. Nothing else. Therefore, for the
 best experience, you should combine Alpaca with [Singling](https://github.com/fearedbliss/Cactus/blob/master/README-SINGLING.md).
 
-As always, when using any type of mod (or just something good to do in general), make sure to always keep backups!
+As always, when using any type of mod, make sure to always keep backups!
 
 ## Status
 
-This project is in maintenance mode and provided as is. I'll only be accepting bug fixes from the community. Furthermore, I recommend not using Alpaca and instead just using [Cactus' Character Isolation](https://odysee.com/@TheCactusSanctuary:f/-Diablo-II--How-to-play-any-version-of-Diablo-II-with-Cactus-%282.4.1%2B%2C-Short-Version%29:a?t=1188) feature in combination with Singling, to provide multiple instances and transfer items via LAN. This allows you to still transfer items in game, reduces the number of dependencies you need to play, and significantly increases the stability of the game since you don't have all of this extra code running.
+This project is in maintenance mode and provided as is. I'll only be accepting
+bug fixes from the community. Furthermore, I recommend not using Alpaca and
+instead just using [Cactus' Character Isolation](https://www.youtube.com/watch?v=kAFfc-kjTxE)
+feature in combination with Singling, to provide multiple instances and transfer
+items via LAN. This allows you to still transfer items in game, reduces the number of
+dependencies you need to play, and significantly increases the stability of the game
+since you don't have all of this extra code running.
 
 ## Compatibility
 
@@ -58,7 +64,7 @@ Released under the [GNU General Public License v3](LICENSE.md) or Later.
 - **`/swap <page #>`** : Swaps the content of the current page with the content of the target page.
 - **`/page <page #>`** : Takes you to the corresponding page.
 
-## Installation Instructions ([Video](https://odysee.com/@TheCactusSanctuary:f/-Diablo-II--Alpaca---A-Simple-Stash-Extension-for-Diablo-II-1.09b---1.10f:5))
+## Installation Instructions ([Video](https://www.youtube.com/watch?v=w6cmsAOO1Qg))
 
 ### Installation (Standalone)
 
