@@ -17,14 +17,12 @@ As always, when using any type of mod, make sure to always keep backups!
 
 ## Status
 
-This project is in maintenance mode and is provided as is. I'm still open to accepting
-bug fixes from the community though.
+This project is in **maintenance mode** and is provided as is.
 
 Alpaca has the same supported versions as Cactus/Singling, which means that
 [Windows 11+ is not supported](https://github.com/fearedbliss/Cactus#windows-11-will-not-be-supported).
 
-Lastly, I **do not recommend** the usage of Alpaca. Please use
-[Cactus' Character Isolation](https://www.youtube.com/watch?v=kAFfc-kjTxE)
+Lastly, I **do not recommend** the usage of Alpaca. Please use **Cactus' Character Isolation**
 feature in combination with Singling, to provide multiple instances and transfer
 items via LAN. This allows you to still transfer items in game, reduces the number of
 dependencies you need to play, and significantly increases the stability of the game
@@ -69,7 +67,7 @@ Released under the [GNU General Public License v3](LICENSE.md) or Later.
 - **`/swap <page #>`** : Swaps the content of the current page with the content of the target page.
 - **`/page <page #>`** : Takes you to the corresponding page.
 
-## Installation Instructions ([Video](https://www.youtube.com/watch?v=w6cmsAOO1Qg))
+## Installation Instructions
 
 ### Installation (Standalone)
 
