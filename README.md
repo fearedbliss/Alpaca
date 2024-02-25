@@ -11,13 +11,17 @@ It has been massively refactored, stabilized, has full support for
 that were related to **`Multiplayer / LAN`** have also been fixed.
 
 Alpaca's primary focus is to provide more storage. Nothing else. Therefore, for the
-best experience, you should combine Alpaca with [Singling](https://github.com/fearedbliss/Cactus/blob/master/README-SINGLING.md).
+best experience, you should combine Alpaca with [Singling](https://github.com/fearedbliss/Cactus/blob/main/README-SINGLING.md).
 
 As always, when using any type of mod, make sure to always keep backups!
 
 ## Status
 
-This project is in **maintenance mode** and is provided as is.
+This project is provided ***as is***. I am not maintaining this anymore, and no bug
+fixes, or releases will be published. I'm leaving this code up to let someone
+else continue developing it if they so desire, since I believe that the core
+refactoring, and splitting I've done to the original PlugY code base is a net
+benefit, and are significant. Also, Alpaca fully supports Diablo II Classic :).
 
 Alpaca has the same supported versions as Cactus/Singling, which means that
 [Windows 11+ is not supported](https://github.com/fearedbliss/Cactus#windows-11-will-not-be-supported).
@@ -32,7 +36,7 @@ since you don't have all of this extra code running.
 
 - [Cactus](https://github.com/fearedbliss/Cactus) -
   A Modern Diablo II Version Switcher (Contains: Singling)
-- [Singling](https://github.com/fearedbliss/Cactus/blob/master/README-SINGLING.md) -
+- [Singling](https://github.com/fearedbliss/Cactus/blob/main/README-SINGLING.md) -
   A collection of non-gameplay modifications and fixes in
   order to improve the Vanilla Diablo II Single Player Experience.
 - [D2GFEx](https://d2mods.info/forum/viewtopic.php?f=5&t=65312) - Native OpenGL Driver For Diablo II
@@ -104,6 +108,9 @@ If you get a **`Read Process Memory Failed`** error when starting Diablo II
 with **`Alpaca`**, you'll need to restart your machine until it works. This error
 also occurs with **`PlugY`** as well, however **`Alpaca`** has a bit of extra
 logic to try and reduce the chance of this occurring.
+
+You can most likely completely eliminate this error if you go with another
+type of injector (or using something like the **loading from D2gfx.dll** approach.
 
 ### MSVCP140.dll is Missing or Alpaca seems to not load
 
